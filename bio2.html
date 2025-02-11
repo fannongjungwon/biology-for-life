@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Updated Document</title>
+<style type="text/css">
+  body {
+    background-color: #ADD8E6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* สไตล์ของภาพลิงก์ */
+  a img {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+
+  /* เอฟเฟกต์เมื่อเลื่อนเมาส์ */
+  a:hover img {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อเลื่อนผ่าน */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+  }
+
+  /* เอฟเฟกต์เมื่อคลิก */
+  a:active img {
+    transform: scale(0.95); /* ย่อขนาดลงเล็กน้อยเมื่อคลิก */
+    opacity: 0.9; /* ลดความโปร่งแสง */
+  }
+
+  /* ตั้งค่าขนาดของรูปภาพ */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* เอฟเฟกต์การเลื่อนเข้าของแถวเมื่อโหลดหน้า */
+  tr {
+    animation: slideIn 1s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* ปรับตำแหน่งและขนาดของแบนเนอร์ */
+  .banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* ให้ภาพเต็มพื้นที่ */
+  }
+
+  /* ปรับความสูงแบนเนอร์สำหรับอุปกรณ์ที่มีหน้าจอเล็ก */
+  @media (max-width: 768px) {
+    .banner img {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner img {
+      height: 200px;
+    }
+  }
+
+  /* สไตล์ของปุ่มที่อยู่มุมซ้ายล่าง */
+  .back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+  }
+
+  .back-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* รองรับการแสดงผลบนมือถือ */
+  @media (max-width: 768px) {
+    td {
+      width: 100%;
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <!-- แบนเนอร์ย้ายขึ้นไปที่ด้านบนสุด -->
+      <tr>
+        <td colspan="5" class="banner">
+          <img src="img/S__29409356.jpg" alt="Banner Image"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="bio2.html">
+            <img src="img/26.png" width="341" height="100" alt=""/>
+          </a>
+        </td>
+        <td>
+          <a href="contact.html">
+            <img src="img/27.png" width="341" height="100" alt=""/>
+          </a>
+        </td>
+        <td>
+          <a href="alevel.html">
+            <img src="img/28.png" width="341" height="100" alt=""/>
+          </a>
+        </td>
+        <td>
+          <a href="vocab.html">
+            <img src="img/29.png" width="341" height="100" alt=""/>
+          </a>
+        </td>
+        <td>
+          <a href="456.html">
+            <img src="img/30.png" width="341" height="100" alt=""/>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ปุ่มกลับหน้าหลักที่อยู่มุมซ้ายล่าง (ถ้ามีเพิ่มในภายหลัง) -->
+</body>
+</html>

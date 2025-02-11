@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vocab</title>
+<style>
+  /* ปรับให้ปุ่มคำศัพท์มีเงา */
+  .vocab-button img {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* เงาเล็กน้อย */
+  }
+
+  /* ปุ่มหน้าหลักเอาเงาออก */
+  .home-button img {
+    box-shadow: none !important;
+  }
+
+  /* เมื่อเลื่อนเมาส์ไปที่ปุ่ม */
+  a:hover img {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อย */
+  }
+
+  /* เมื่อคลิก */
+  a:active img {
+    transform: scale(0.95); /* ย่อขนาดเมื่อคลิก */
+    opacity: 0.9; /* ลดความโปร่งแสง */
+  }
+
+  /* ปรับพื้นหลัง */
+  body {
+    background-color: #ADD8E6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* เอฟเฟกต์ Fade-In สำหรับภาพ */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Iframe แสดงเต็มจอ */
+  iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+
+  /* จัดการ table layout */
+  table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="4">
+          <img src="img/41.png" alt="" class="fade-in" style="width: 100%; max-height: 500px; object-fit: cover;">
+        </td>
+      </tr>
+      <tr>
+        <td width="25%">&nbsp;</td>
+        <td width="25%">
+          <a href="https://drive.google.com/file/d/1usVmxNicOIVyxwczA-hJlQImu_yx5wY5/view?usp=drive_link" class="vocab-button">
+            <img src="img/35.png" alt="Button 1" style="max-width: 100%; height: auto;">
+          </a>
+        </td>
+        <td width="25%">
+          <a href="https://online.fliphtml5.com/xvmtk/clex/#p=4" class="vocab-button">
+            <img src="img/36.png" alt="Button 2" style="max-width: 100%; height: auto;">
+          </a>
+        </td>
+        <td width="25%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="bio2.html" class="home-button">
+            <img src="img/26.png" alt="Button 3" style="max-width: 100%; height: auto;">
+          </a>
+        </td>
+        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <img src="img/12.jpg" alt="" class="fade-in" style="width: 100%; max-height: 768px; object-fit: cover;">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
