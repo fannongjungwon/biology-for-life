@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<style type="text/css">
+body {
+  background-color: #ADD8E6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* ปรับขนาดรูปภาพให้พอดีกับเว็บไซต์ */
+.contact-image {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto; 
+  object-fit: contain;
+}
+
+/* ปรับให้ภาพอยู่ตรงกลางของเว็บ */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 1850px;
+  height: auto;
+}
+
+/* สไตล์ปุ่ม */
+.button-container {
+  margin-top: 20px;
+}
+
+/* เพิ่มเอฟเฟคให้ปุ่ม */
+.button-container a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect (เมาส์วางบนปุ่ม) */
+.button-container a img:hover {
+  transform: scale(1.1); /* ขยายปุ่ม 10% */
+  filter: brightness(1.2); /* ทำให้ปุ่มสว่างขึ้น */
+}
+
+/* Active Effect (เมื่อคลิกปุ่ม) */
+.button-container a img:active {
+  transform: scale(0.95); /* กดลงเล็กน้อย */
+  filter: brightness(0.9); /* ทำให้สีเข้มขึ้น */
+}
+</style>
+</head>
+
+<body>
+  <div class="table-container">
+    <table width="100%" border="0">
+      <tbody>
+        <tr>
+          <td colspan="2" align="center" class="banner">
+            <img src="img/51.png" class="contact-image" alt="เกี่ยวกับเรา">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">&nbsp;</td>
+        </tr>
+        <tr class="button-container">
+          <td width="371" height="148" align="center">
+            <a href="http://127.0.0.1/test1/bio2.html">
+              <img src="img/26.png" width="341" height="100" alt=""/>
+            </a>
+          </td>
+          <td width="1607" bgcolor="#ADD8E6">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

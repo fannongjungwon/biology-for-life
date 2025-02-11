@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>alevel</title>
+<style type="text/css">
+  body {
+    background-color: #ADD8E6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content-section {
+    padding: 20px 0;
+  }
+
+  .button-link img {
+    width: 341px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .button-link img:hover {
+    transform: scale(1.08);
+  }
+
+  .button-link img:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  .button-link {
+    animation: slideIn 1s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .image-row img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-link img:active {
+    animation: bounce 0.3s ease-in-out;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .content-section img {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="6">
+          <img src="img/24.png" alt="Header Image">
+        </td>
+      </tr>
+      <tr class="content-section">
+        <td colspan="6">&nbsp;</td>
+      </tr>
+      <tr class="image-row">
+        <td><a href="https://drive.google.com/file/d/1CV8KZ286BdF8jh2XmXW4DDgUBbyvh26u/view?usp=drive_link"><img src="img/31.png" alt="Image 1" width="341" height="279"/></a></td>
+        <td><a href="https://drive.google.com/file/d/18h3hNMbRGFeltJioXMkkKVR8xmYRYWqB/view?usp=drive_link"><img src="img/32.png" alt="Image 2" width="341" height="279"/></a></td>
+        <td><a href="https://drive.google.com/file/d/1Q_2QpoHmHL79UWEnFKuUXuaSFkDpkvrn/view?usp=drive_link"><img src="img/33.png" alt="Image 3" width="341" height="100"/></a></td>
+        <td><a href="https://drive.google.com/file/d/1gNoQEpjU7IAB_ApUQKJd6xnH6TAtWy6v/view?usp=drive_link"><img src="img/34.png" alt="Image 4" width="341" height="279"/></a></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr class="content-section">
+        <td>
+          <a href="http://127.0.0.1/test1/bio2.html" class="button-link home-button">
+            <img src="img/26.png" alt="Button">
+          </a>
+        </td>
+        <td colspan="5">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <img src="img/12.jpg" alt="Footer Image">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
